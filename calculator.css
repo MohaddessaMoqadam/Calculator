@@ -1,0 +1,157 @@
+/* this project has been done by Mohaddessa Moqadam and Najma Hussaini */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(IMG/IMG-20260904-WA0001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+header{
+    width: 98%;
+    height: 60 px;
+    margin: 8px auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
+
+}
+header h1{
+    color:#f0890b;
+    font-size: 32px;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+nav a{
+    color: #777;
+    font-size: 15px;
+    font-weight: bolder;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.first{
+    width: 100%;
+    min-height: 100vh;
+    margin: 30px auto;
+    
+}
+.first .home{
+    width: 90%;
+    height: 340px;
+    margin: 30px auto;
+    padding: 60px 40px ;
+    border: 1px solid #bbb;
+    box-shadow: 0 12px 18px;
+    border-radius: 12px;
+    line-height: 1.35;
+   
+   
+}
+.second{
+    width: 100%;
+    min-height: 100vh;
+    margin: 30px auto;
+    padding: 60px 40px ;
+    ;
+
+}
+.second .maincontent{
+    margin: 30px auto;
+
+    margin: 30px auto;
+    padding: 60px 40px ;
+
+    
+  
+    
+}
+.second .maincontent h1{
+    color: #f0890b;
+    text-align: left;
+    align-content: space-between;
+ 
+    
+}
+.third{
+    margin: 30px auto;
+    padding: 60px 40px ;
+    width: 90%;
+    min-height: 100vh;
+    margin: 30px auto;
+    
+}
+.third .quotation{
+    padding: 60px 40px ;
+    border: 1px solid #bbb;
+    box-shadow: 0 12px 18px;
+    border-radius: 12px;
+    color: black;
+    line-height: 1.35;
+    text-align: center;
+    font-weight: bold;
+    
+}
+/* Our main work that is making a calculator, is going to start form here. */
+
+.calculator {
+    
+    width: 420px;
+   border: 2px solid #bbb;
+    border-radius: 15px 15px 0 0;
+
+}
+
+#display {
+    background-color: #bbb;
+    width: 416px;
+    height: 80px;
+    font-size: 25px;
+    text-align: right;
+   
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    border: none;
+}
+
+.buttons { 
+    background-color: #bbb;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    
+  
+}
+
+button {
+    background-color: lavender;
+    
+    height: 55px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: lightgray;
+}
+
+.equal {
+    grid-column: span 2;
+}
+#operator-btn{
+    background-color: #f0890b;
+}

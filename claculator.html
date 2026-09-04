@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="calculator.css">
+    <!--this project has done by Mohaddessa Moqadam and Najma Hussaini-->
+</head>
+<body>
+    <header><h1>Math Magician</h1>
+        <nav>
+            <a href="#HOME">Home</a> 
+            <a href="#Content">Calculator</a> 
+            <a href="#Quotation">Quote</a> 
+        </nav>
+    </header>
+    
+    <main>
+    <div>
+        <div class="first">
+            <div id="HOME" class="home">
+                <h1>Welcome To Our Webpage!</h1> <br> <br>
+                <p>A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subttraction, multiplication and division mathematical calculations. However, more sophisticated calculators can handle exponential operations, square roots, logarithms, trigonometric functions and hyperbolic functions. Internally, some calculators perform all these functions by repeated addition processes. Most calculators these days require electricity to operate or are battery-powered calculators. Calculators work by performing programmed functions based on numerial inputs. Before the electronic calculator (circa 1970), a more primitive calculator, the slid rule, was commonly used. It consisted of a slat of wood called the slide that could be moved in and out of a reinforced pair of slats. Both the slide and the outer pair of slats had calibrated numerical scales.</p>
+            </div>
+        </div>
+        <!--Calculator-->
+        <div class="second">
+            <div id="Content" class="maincontent">
+                <h1>Lets Do Some Math...</h1>
+                <!--Our Main Work-->
+                <div class="calculator">
+
+                    <input type="text" id="display" readonly>
+            
+                    <div class="buttons">
+            
+                        <button onclick="clearDisplay()" >AC</button>
+                        <button onclick="deleteLast()">DEL</button>
+                        <button onclick="appendValue('%')">%</button>
+                        <button onclick="appendValue('/')" id="operator-btn">÷</button>
+            
+                        <button onclick="appendValue('7')">7</button>
+                        <button onclick="appendValue('8')">8</button>
+                        <button onclick="appendValue('9')">9</button>
+                        <button onclick="appendValue('*')" id="operator-btn">&#215</button>
+            
+                        <button onclick="appendValue('4')">4</button>
+                        <button onclick="appendValue('5')">5</button>
+                        <button onclick="appendValue('6')">6</button>
+                        <button onclick="appendValue('-')" id="operator-btn">-</button>
+            
+                        <button onclick="appendValue('1')">1</button>
+                        <button onclick="appendValue('2')">2</button>
+                        <button onclick="appendValue('3')">3</button>
+                        <button onclick="appendValue('+')" id="operator-btn">+</button>
+            
+                        <button class="equal" onclick="appendValue('0')">0</button>
+                        <button onclick="appendValue('.')">.</button>
+                        <button  onclick="calculate()" id="operator-btn">=</button>
+            
+                    </div>
+            
+                </div>
+            
+                
+            </div>
+        </div>
+        <div class="third">
+            <div id="Quotation" class="quotation">
+                <p>Mathematic is not about numbers, equations, computationsor algorithm. It is about understanding.</p><br>
+                <p>-William paul Thurston</p>
+            </div>
+        </div>
+    </div>
+    
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
